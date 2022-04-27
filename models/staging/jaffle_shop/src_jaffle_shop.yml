@@ -14,16 +14,6 @@ sources:
              tests:
               - unique
               - not_null
-        - name: status
-          description: "{{ doc('order_status') }}"
-          tests:
-            - accepted_values:
-                values:
-                  - completed
-                  - shipped
-                  - returned
-                  - placed
-                  - return_pending
         - name: orders
           description: A raw table for orders         
           columns:
